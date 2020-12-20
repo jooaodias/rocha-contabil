@@ -16,9 +16,9 @@ const Contato = () => {
             <Container>
                 <h1>Entre em Contato</h1>
                 <hr />
-                <Row xs="1" md="3">
-                    <Col>
-                        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+                <Row xs="1" md="3" >
+                    <Col className="mt-3">
+                        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} >
                             <CardTitle tag="h5">Horário de Funcionamento <FontAwesomeIcon className="float-right" icon={faCalendarCheck} size="1x" title="Calendário" /></CardTitle>
                             <CardText>
                                 <b>Atendendemos às Segunda-Feiras às Sextas-Feiras</b>
@@ -28,23 +28,22 @@ const Contato = () => {
 
                         </Card>
                     </Col>
-                    <Col>
-                        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
+                    <Col className="mt-3">
+                        <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }} >
                             <CardTitle tag="h5">Localização do Escritório <FontAwesomeIcon className="float-right" icon={faMapMarked} size="1x" title="Localização Mapa" /></CardTitle>
                             <CardText>
                                 <b>Endereço: </b>Rua Sete de Setembro, 1058, Centro em Americana-SP<br />
                                 <b>CEP: </b> 13465-320
                                 <br />
-                                <section className="float-right">
-                                    <a href="https://www.google.com/maps/place/R.+Sete+de+Setembro,+1058+-+Centro,+Americana+-+SP,+13465-320/@-22.7435139,-47.3350229,17z/data=!3m1!4b1!4m5!3m4!1s0x94c89bd31f0ed369:0xe88f0a45c28b0cad!8m2!3d-22.7435139!4d-47.3328342" target="_blank" rel="noreferrer">
-                                        Clique aqui <FontAwesomeIcon className="mt-1" icon={faMapMarkerAlt} size="1x" />
-                                    </a>
-                                </section>
+                                <a href="https://www.google.com/maps/place/R.+Sete+de+Setembro,+1058+-+Centro,+Americana+-+SP,+13465-320/@-22.7435139,-47.3350229,17z/data=!3m1!4b1!4m5!3m4!1s0x94c89bd31f0ed369:0xe88f0a45c28b0cad!8m2!3d-22.7435139!4d-47.3328342" target="_blank" rel="noreferrer" className="float-right">
+                                    Clique aqui <FontAwesomeIcon className="mt-1" icon={faMapMarkerAlt} size="1x" />
+                                </a>
+
                             </CardText>
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col className="mt-3">
                         <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
                             <CardTitle tag="h5">Contato <FontAwesomeIcon icon={faPhoneAlt} className="float-right" size="1x" title="Telefone" /></CardTitle>
                             <CardText>

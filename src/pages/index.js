@@ -3,9 +3,25 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { Container } from 'reactstrap';
+import styled from 'styled-components';
+
+const TextStyled = styled.section`
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+`
+
+const LinkStyled = styled(Link)`
+    text-decoration: none;
+    color: #354678 !important;
+    font-weight: bold;
+
+    &:hover{
+       text-decoration: underline; 
+       color: #5C98FF !important;
+       cursor: pointer;
+    }
+`
 
 const Home = () => {
   return (
@@ -15,17 +31,20 @@ const Home = () => {
         keywords="Contabilidade, contabil, rocha, Americana, financeiro"
       />
       <Container>
-        <h1>Rocha Contábil Ltda</h1>
+        <h1>Rocha Contábil</h1>
         <hr />
+        <TextStyled>Escritório que trabalha com muita seriedade e ética para te ajudar em diversos contextos na área da contabilidade. Contamos com uma equipe totalmente capacitada e experiente para te atendermos. Venha nos conhecer! 
 
-        <section>
-          <h6>Teste de Icone</h6>
-          <a href="https://www.instagram.com/newenglandservices/?hl=en" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faBriefcase} size="2x" title="Instagram" />
-          </a>
-        </section>
+        <ul className="mt-2" style={{fontSize: '1.0rem'}}>
+          <li><LinkStyled to="/contato">Para entrar em contato conosco</LinkStyled></li>
+          <li><LinkStyled to="/sobre">Sobre a Empresa</LinkStyled></li>
+          <li><LinkStyled to="/webmail">WebMail Rocha</LinkStyled></li>
+          <li><LinkStyled to="/areacliente">Área do Cliente (ainda em desenvolvimento)</LinkStyled></li>
+        </ul>
 
-        <Link to="/test">Go to test</Link>
+        </TextStyled>
+
+        
       </Container>
     </Layout>
   )
