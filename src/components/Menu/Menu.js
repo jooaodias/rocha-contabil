@@ -8,19 +8,19 @@ const StyledLink = styled(NavLink)`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: ${({ theme }) => theme.darkGray} !important;
+  color: #2E58B3 !important;
 
   .nav-item:not(:last-child) & {
     margin-right: 15px;
   }
 
   &.active {
-    color: ${({ theme }) => theme.primaryColor} !important;
-    border-bottom: 4px solid ${({ theme }) => theme.primaryColor} !important;
+    color: #2E58B3 !important;
+    border-bottom: 4px solid #2E58B3 !important;
   }
   
   &:hover {
-    color: ${({ theme }) => theme.darkGray} !important;
+    color: #5C98FF !important;
   }
 `
 

@@ -12,12 +12,12 @@ export const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <header style={{boxShadow: '0 8px 6px -6px black'}}>
+    <header style={{boxShadow: '0 8px 6px -6px #2E58B3'}}>
       <Container>
         <Row>
         <Navbar className="col" light expand="md">
           <NavbarBrand href="/">
-            <FontAwesomeIcon icon={faBriefcase} size="2x" title="Mala"/>
+            <FontAwesomeIcon icon={faBriefcase} size="2x" title="Mala" color="#2E58B3"/>
           </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
