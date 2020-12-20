@@ -27,7 +27,7 @@ const SEO = ({
     query={siteQuery}
     render={data => (
       <Helmet
-        htmlAttributes={{ lang: 'en' }}
+        htmlAttributes={{ lang: 'pt-br' }}
         title={pageTitle || data.site.siteMetadata.title}
         titleTemplate={pageTitle && `%s | ${data.site.siteMetadata.title}`}
         meta={[
