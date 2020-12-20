@@ -3,9 +3,14 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Header from './Header';
 import { Header } from './Menu/Header';
 import Footer from './Footer/footer';
+import styled from 'styled-components';
+
+const ContainerStyled = styled.div`
+  height: 100vh;
+  /* position: fixed; */
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -19,14 +24,14 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <ContainerStyled>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <Header />
-        <div style={{marginTop: '24px'}}>
+        <div style={{ marginTop: '24px', paddingBottom: '120px'}}>
           {children}
         </div>
-        <Footer/>
-      </>
+        <Footer />
+      </ContainerStyled>
     )}
   />
 );
